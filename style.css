@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "als_scriptregular";
+    src: url('alsscrp-webfont.woff2') format('woff2'),
+         url('alsscrp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kelvetica';
+    src: url('kelvetica_nobis-webfont.woff2') format('woff2'),
+         url('kelvetica_nobis-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'suisse';
+    src: url('fonnts.com-suisse_intl_regular-webfont.woff2') format('woff2'),
+         url('fonnts.com-suisse_intl_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Minion Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minion Pro Regular'), url('MinionPro-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Minion Pro Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minion Pro Medium'), url('MinionPro-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Minion Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minion Pro Bold'), url('MinionPro-Bold.woff') format('woff');
+}
+
+:root {
+    --cursive-text: "als_scriptregular";
+    --body-text: "Minion Pro";
+    --body-bold: "Minion Pro Medium";
+    --black-text: #202020;
+    --light-blue: #D8EBFD;
+    --burgundy: #540B0E;
+    --tan-bg: #EBE3D5;
+    /* 1d3557 navy blue */
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--tan-bg);
+}
+
+/* NAVBAR */
+.navbar {
+    font-family: var(--body-text);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    background-color: transparent; 
+    transition: background-color 0.3s
+}
+
+.navbar.scrolled {
+    background-color: var(--tan-bg);
+}
+
+.navbar a, .navbar-brand {
+    color: var(--burgundy);
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    scale: 1.1;
+    color: var(--burgundy);  
+
+}
+
+.navbar-brand:hover {
+    cursor: default;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.custom-toggler {
+    border: none;
+    color: #202020; 
+}
+
+.custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* change images */
+.navbar-toggler-icon {
+    background-image: url("./assets/list.svg");
+    
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon{
+    background-image: url("./assets/x-lg.svg");
+}
+
+/*#test {
+    background:#540B0E;
+    height: 100vh;
+    display: none;
+}
+
+#test.navbar-opened {
+    display: block;
+    @media (min-width: 576px) {
+        display: none;
+    }
+}*/
+
+/* MAIN HERO */
+#main-hero {
+    color: var(--burgundy);
+    height: 80vh;
+}
+
+.hero-image {
+    background-image: url("./assets/me\ kingston.jpeg");
+    height: 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-attachment: fixed; /*or leave out*/
+    position: relative;
+
+    /*does nothing yet */
+    @media (max-width: 576px) {
+        background-image: url("./assets/me\ kingston.jpeg");
+    }
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--body-text);
+
+
+    :hover {
+       cursor: default; 
+    }
+}
+
+.hero-text h1 {
+    font-family: var(--cursive-text);
+    font-size: max(21vw, 70px);
+    white-space: nowrap;
+    transform: translate(-3%, 25%);
+}
+
+.hero-text h2 {
+    text-align: right;
+    transform: translate(-5%);
+    font-size: 32px;
+
+    @media (max-width: 575px) {
+        text-align: center;
+        transform: translate(0%);
+        font-size: 16px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 22px;
+    }
+
+}
+
+/* max and min text size */
+
+/* BODY TEXT */
+.body-header {
+    color: var(--black-text);
+    font-family: var(--body-text);
+}
+
+.body-text {
+    color: var(--black-text);
+    font-family: var(--body-text);
+}
+
+.bold {
+    font-family: var(--body-bold);
+}
+
