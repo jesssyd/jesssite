@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateNavbarBackground() {
         const isExpanded = navbarToggler.getAttribute('aria-expanded') === 'true';
         if (window.scrollY >= changePosition || isExpanded) {
-            navbar.style.backgroundColor = 'var(--tan-bg)';
+            navbar.style.backgroundColor = 'rgba(235, 227, 213, 0.8)';
         } else {
             navbar.style.backgroundColor = 'transparent';
         }

@@ -64,42 +64,41 @@ html, body {
 
 /* NAVBAR */
 .navbar {
-    font-family: var(--body-text);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     text-align: center;
     background-color: transparent; 
-    transition: background-color 0.3s
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
 }
 
 .navbar.scrolled {
     background-color: var(--tan-bg);
 }
 
-.navbar a, .navbar-brand {
+.navbar a, .navbar-brand, .footer-nav a {
     color: var(--burgundy);
-    font-size: 1.2rem;
+    font-family: var(--body-text);
 }
 
 .nav-link:hover {
     scale: 1.1;
     color: var(--burgundy);  
-
 }
 
 .navbar-brand:hover {
     cursor: default;
+    color: var(--burgundy);
 }
 
 @media (max-width: 576px) {
     .navbar-nav {
-        
         flex-direction: column;
         width: 100%;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .navbar-collapse {
@@ -120,7 +119,6 @@ html, body {
     box-shadow: none;
 }
 
-/* change images */
 .navbar-toggler-icon {
     background-image: url("./assets/list.svg");
     
@@ -129,19 +127,6 @@ html, body {
 .custom-toggler[aria-expanded="true"] .navbar-toggler-icon{
     background-image: url("./assets/x-lg.svg");
 }
-
-/*#test {
-    background:#540B0E;
-    height: 100vh;
-    display: none;
-}
-
-#test.navbar-opened {
-    display: block;
-    @media (min-width: 576px) {
-        display: none;
-    }
-}*/
 
 /* MAIN HERO */
 #main-hero {
@@ -152,16 +137,14 @@ html, body {
 .hero-image {
     background-image: url("./assets/me\ kingston.jpeg");
     height: 100%;
-    background-position-x: center;
-    background-position-y: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;    
-    background-attachment: fixed; /*or leave out*/
+    /*background-attachment: fixed; or leave out*/
     position: relative;
 
-    /*does nothing yet */
     @media (max-width: 576px) {
-        background-image: url("./assets/me\ kingston.jpeg");
+        background-image: url("./assets/me\ vertical.jpeg");
     }
 }
 
@@ -186,26 +169,20 @@ html, body {
     transform: translate(-3%, 25%);
 }
 
-.hero-text h2 {
-    text-align: right;
+#main-hero p .btn {
+
+    background-color: rgba(235, 227, 213, 0.8);
+    border-radius: 0px !important;
+
+    
     transform: translate(-5%);
-    font-size: 32px;
 
-    @media (max-width: 575px) {
-        text-align: center;
-        transform: translate(0%);
-        font-size: 16px;
-    }
-
-    @media (max-width: 992px) {
-        font-size: 22px;
-    }
 
 }
 
-/* max and min text size */
 
 /* BODY TEXT */
+
 .body-header {
     color: var(--black-text);
     font-family: var(--body-text);
@@ -214,9 +191,152 @@ html, body {
 .body-text {
     color: var(--black-text);
     font-family: var(--body-text);
+    font-size: 1.2rem;
 }
 
 .bold {
     font-family: var(--body-bold);
 }
 
+.body-small {
+    font-family: var(--body-text);
+    font-size: 0.8rem;
+}
+
+.small-title {
+    font-family: var(--cursive-text);
+    font-size: 14vw;
+    color: var(--burgundy);
+
+}
+
+/* MAIN SECTION */
+#main-section {
+    transform: translateY(-15%);
+}
+#main-section .row{
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    gap: 3%;
+}
+
+#main-section .col {
+    padding-top: 1vw;
+    margin-top: 0px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: white;
+} 
+
+#main-section p {
+    padding-top: 1vw;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+}
+
+.main-images {
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-section .small-title {
+    transform: translate(0, 35%)
+}
+
+/* CONTACT */
+.contact-header { 
+    font-size: 10vw;
+}
+
+#main-contact * {
+    background-color: var(--burgundy);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#main-contact p {
+    font-family: var(--body-text);
+    line-height: 1.5;
+}
+
+.contact-link:hover {
+    scale: 1.1;  
+}
+/* FOOTER */
+.footer-nav {
+    font-size: 1rem;
+}
+
+.footer-nav .navbar-brand {
+    font-family: var(--cursive-text);
+    font-size: 2rem;
+}
+
+
+
+/* HORIZONTAL SCROLLING
+@keyframes infiniteScroll {
+    from {transform: translateX(0) }
+    to {transform: translateX(calc(0px - 50% - 25px));}
+}
+
+.horizontal-scrolling-items {
+    display: flex;
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 200px;
+    gap: 50px;
+}
+
+.horizontal-scrolling-items__item {
+    height: 100%;
+    width: 200px;
+    background-size: cover;
+    white-space: nowrap; 
+}
+
+@keyframes infiniteScroll {
+    from {transform: translateX(0)}
+    to {transform: translateX(-50%)}
+  }
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .horizontal-scrolling-items {
+    display: flex;
+    font-size: 40px;
+    width: 2600px;
+    animation-name: infiniteScroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .horizontal-scrolling-items__item {
+    white-space: nowrap;
+  }
+
+.item1 {
+    background-image: url("./assets/1.jpeg");
+}
+
+.item2 {
+    background-image: url("./assets/2.jpeg");
+}
+
+.item3 {
+    background-image: url("./assets/3.jpeg");
+}
+
+.item4 {
+    background-image: url("./assets/4.jpeg");
+}
+
+.item5 {
+    background-image: url("./assets/5.jpeg");
+}
+*/
