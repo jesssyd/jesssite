@@ -7,23 +7,6 @@
 }
 
 @font-face {
-    font-family: 'kelvetica';
-    src: url('kelvetica_nobis-webfont.woff2') format('woff2'),
-         url('kelvetica_nobis-webfont.woff') format('woff');
-    font-weight: lighter;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'suisse';
-    src: url('fonnts.com-suisse_intl_regular-webfont.woff2') format('woff2'),
-         url('fonnts.com-suisse_intl_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
     font-family: 'Minion Pro';
     font-style: normal;
     font-weight: normal;
@@ -170,16 +153,16 @@ html, body {
 }
 
 #main-hero p .btn {
-
     background-color: rgba(235, 227, 213, 0.8);
     border-radius: 0px !important;
-
-    
     transform: translate(-5%);
-
-
+    
 }
 
+#main-hero p:hover {
+    color: var(--burgundy);
+    scale: 1.1;
+}
 
 /* BODY TEXT */
 
@@ -205,14 +188,13 @@ html, body {
 
 .small-title {
     font-family: var(--cursive-text);
-    font-size: 14vw;
+    font-size: min(100px, 14vw);
     color: var(--burgundy);
-
 }
 
 /* MAIN SECTION */
 #main-section {
-    transform: translateY(-15%);
+    transform: translateY(-10%);
 }
 #main-section .row{
     padding-top: 0px;
@@ -245,13 +227,19 @@ html, body {
 }
 
 /* CONTACT */
+#main-contact {
+    width: 100vw;
+    background-color: var(--burgundy);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 .contact-header { 
-    font-size: 10vw;
+    font-size: min(10vw, 85px);
 }
 
 #main-contact * {
-    background-color: var(--burgundy);
-    color: white;
+    color: var(--tan-bg); /*or white*/
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -265,6 +253,9 @@ html, body {
     scale: 1.1;  
 }
 /* FOOTER */
+#footer {
+    margin-top: -10px;
+}
 .footer-nav {
     font-size: 1rem;
 }
@@ -274,69 +265,61 @@ html, body {
     font-size: 2rem;
 }
 
-
-
-/* HORIZONTAL SCROLLING
-@keyframes infiniteScroll {
-    from {transform: translateX(0) }
-    to {transform: translateX(calc(0px - 50% - 25px));}
+/* ABOUT PAGE */
+#about-page {
+    position: relative;
+    height: 100vh;
+    color: white;
 }
 
-.horizontal-scrolling-items {
-    display: flex;
-    animation-name: infiniteScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    height: 200px;
-    gap: 50px;
-}
-
-.horizontal-scrolling-items__item {
+#about-page .about-image {
+    background-image: url("./assets/from the back.jpeg");
     height: 100%;
-    width: 200px;
-    background-size: cover;
-    white-space: nowrap; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: relative;
+
 }
 
-@keyframes infiniteScroll {
-    from {transform: translateX(0)}
-    to {transform: translateX(-50%)}
-  }
-  .container {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .horizontal-scrolling-items {
-    display: flex;
-    font-size: 40px;
-    width: 2600px;
-    animation-name: infiniteScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .horizontal-scrolling-items__item {
+.about-text {
+    text-align: center;
+    height: 75%;
+    transform: translateY(10%)
+}
+
+.about-title {
+    @media(max-width: 768px) {
+        align-self: flex-start;
+        margin-left: 40px;
+    }
+    
+}
+.about-body {
+    align-self: flex-end;
+    max-width: 75vw;
+    min-width: 350px;
+}
+
+#about-page .body-text {
+    color: white;
+
+}
+
+#about-page .small-title {
+    color: white;
     white-space: nowrap;
-  }
-
-.item1 {
-    background-image: url("./assets/1.jpeg");
+  
 }
 
-.item2 {
-    background-image: url("./assets/2.jpeg");
-}
 
-.item3 {
-    background-image: url("./assets/3.jpeg");
-}
 
-.item4 {
-    background-image: url("./assets/4.jpeg");
+/* ABOUT FOOTER */
+#about-footer {
+    
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0; 
+        margin: 0; 
 }
-
-.item5 {
-    background-image: url("./assets/5.jpeg");
-}
-*/
