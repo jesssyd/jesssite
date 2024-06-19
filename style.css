@@ -272,7 +272,7 @@ html, body {
     color: white;
 }
 
-#about-page .about-image {
+.about-image {
     background-image: url("./assets/from the back.jpeg");
     height: 100%;
     background-position: center;
@@ -282,7 +282,7 @@ html, body {
 
 }
 
-.about-text {
+.text-shifted {
     text-align: center;
     height: 75%;
     transform: translateY(10%)
@@ -309,17 +309,97 @@ html, body {
 #about-page .small-title {
     color: white;
     white-space: nowrap;
-  
 }
-
-
 
 /* ABOUT FOOTER */
-#about-footer {
-    
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 0; 
-        margin: 0; 
+
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0; 
+    margin: 0; 
 }
+
+/* PHOTOGRAPHY PAGE */
+*, *::after, *::before {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general formatting for layout */
+#photo-content .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#photo-content .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+#photo-content .image-item {
+    flex: 1 0 28%;
+    min-width: 200px;
+    cursor: zoom-in;
+    transition: transform 250ms ease;
+}
+
+#photo-content .image-item:is(:hover, :focus){
+    transform: scale(1.03);
+}
+
+
+#photography-page, #photography-page > * {
+    background-color: white;
+}
+
+#photo-content {
+    height: 100vh;
+}
+
+#photo-content .col {
+    padding-top: 1vw;
+    margin-top: 0px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: var(--tan-bg);
+} 
+
+#photo-content .small-title {
+    transform: translate(0, 35%)
+}
+#photo-content p {
+    padding-top: 1vw;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+}
+
+#photo-content img {
+height: 200px;
+    
+}
+
+.p-images {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#photography-footer {
+    position: static;
+    margin-top: -10px;
+
+}
+
+#photo-content .container {
+    width: 100vw;
+}
+

@@ -1,0 +1,101 @@
+[
+    {
+      "name" : "Food",
+      "images" : [
+          {
+            "src": "assets/gallery/carousel1.jpeg",
+            "alt": "banana"
+          },
+          {
+            "src": "assets/gallery/carousel1.jpeg",
+            "alt": "banana"
+          },
+          {
+            "src": "assets/gallery/carousel1.jpeg",
+            "alt": "banana"
+          },
+          {
+            "src": "assets/gallery/carousel1.jpeg",
+            "alt": "banana"
+          },
+          {
+            "src": "assets/gallery/carousel1.jpeg",
+            "alt": "banana"
+          },
+          {
+            "src": "assets/gallery/carousel1.jpeg",
+            "alt": "banana"
+          },
+          {
+            "src": "assets/gallery/carousel1.jpeg",
+            "alt": "banana"
+          }
+      ]
+    },
+    {
+      "name" : "Mountains",
+      "images" : [
+        {
+          "src": "assets/gallery/carousel2.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel2.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel2.jpeg.",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel2.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel2.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel2.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel2.jpeg",
+          "alt": "banana"
+        }
+      ]
+    },
+    {
+      "name" : "Plants",
+      "images" : [
+        {
+          "src": "assets/gallery/carousel3.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel3.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel3.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel3.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel3.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel3.jpeg",
+          "alt": "banana"
+        },
+        {
+          "src": "assets/gallery/carousel3.jpeg",
+          "alt": "banana"
+        }
+      ]
+    }
+  ]
