@@ -1,100 +1,125 @@
 [
     {
-      "name" : "Food",
+      "name" : "051923",
       "images" : [
           {
-            "src": "assets/gallery/carousel1.jpeg",
-            "alt": "banana"
+            "src": "assets/modal/051923/051923-a.jpeg",
+            "alt": "Liv 1"
           },
           {
-            "src": "assets/gallery/carousel1.jpeg",
-            "alt": "banana"
+            "src": "assets/modal/051923/051923-b.jpeg",
+            "alt": "Liv, Ago 1"
           },
           {
-            "src": "assets/gallery/carousel1.jpeg",
-            "alt": "banana"
+            "src": "assets/modal/051923/051923-c.jpeg",
+            "alt": "Liv 2"
           },
           {
-            "src": "assets/gallery/carousel1.jpeg",
-            "alt": "banana"
+            "src": "assets/modal/051923/051923-d.jpeg",
+            "alt": "Jess"
           },
           {
-            "src": "assets/gallery/carousel1.jpeg",
-            "alt": "banana"
+            "src": "assets/modal/051923/051923-e.jpeg",
+            "alt": "Food and Drinks"
           },
           {
-            "src": "assets/gallery/carousel1.jpeg",
-            "alt": "banana"
-          },
-          {
-            "src": "assets/gallery/carousel1.jpeg",
-            "alt": "banana"
+            "src": "assets/modal/051923/051923-f.jpeg",
+            "alt": "Liv, Ago 2"
           }
       ]
     },
     {
-      "name" : "Mountains",
+      "name" : "072923",
       "images" : [
         {
-          "src": "assets/gallery/carousel2.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/072923/072923-b.jpeg",
+          "alt": "Jasmine 2"
         },
         {
-          "src": "assets/gallery/carousel2.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/072923/072923-a.jpeg",
+          "alt": "Jasmine 1"
         },
         {
-          "src": "assets/gallery/carousel2.jpeg.",
-          "alt": "banana"
+          "src": "assets/modal/072923/072923-c.jpeg",
+          "alt": "Jess 1"
         },
         {
-          "src": "assets/gallery/carousel2.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/072923/072923-d.jpeg",
+          "alt": "Jess 2"
         },
         {
-          "src": "assets/gallery/carousel2.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/072923/072923-e.jpeg",
+          "alt": "Jess 3"
         },
         {
-          "src": "assets/gallery/carousel2.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/072923/072923-f.jpeg",
+          "alt": "Purse"
         },
         {
-          "src": "assets/gallery/carousel2.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/072923/072923-g.jpeg",
+          "alt": "Jasmine 3"
+        },
+        {
+          "src": "assets/modal/072923/072923-h.jpeg",
+          "alt": "Jasmine 4"
         }
       ]
     },
     {
-      "name" : "Plants",
+      "name" : "081323",
       "images" : [
         {
-          "src": "assets/gallery/carousel3.jpeg",
+          "src": "assets/modal/081323/081323-a.JPG",
+          "alt": "Jasmine at the River 1"
+        },
+        {
+          "src": "assets/modal/081323/081323-b.JPG",
+          "alt": "Jasmine at the River 2"
+        },
+        {
+          "src": "assets/modal/081323/081323-c.JPG",
           "alt": "banana"
         },
         {
-          "src": "assets/gallery/carousel3.jpeg",
+          "src": "assets/modal/081323/081323-d.JPG",
           "alt": "banana"
         },
         {
-          "src": "assets/gallery/carousel3.jpeg",
+          "src": "assets/modal/081323/081323-e.JPG",
           "alt": "banana"
         },
         {
-          "src": "assets/gallery/carousel3.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/081323/081323-f.jpeg",
+          "alt": "Jess in a Field 2"
+        }
+      ]
+    },
+    {
+      "name" : "061524",
+      "images" : [
+        {
+          "src": "assets/modal/061524/061524-a.JPG",
+          "alt": "Wren and Sydney"
         },
         {
-          "src": "assets/gallery/carousel3.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/061524/061524-b.JPG",
+          "alt": "Levi 1"
         },
         {
-          "src": "assets/gallery/carousel3.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/061524/061524-c.jpeg",
+          "alt": "Jess"
         },
         {
-          "src": "assets/gallery/carousel3.jpeg",
-          "alt": "banana"
+          "src": "assets/modal/061524/061524-d.JPG",
+          "alt": "Marigolds"
+        },
+        {
+          "src": "assets/modal/061524/061524-e.JPG",
+          "alt": "Levi 2"
+        },
+        {
+          "src": "assets/modal/061524/061524-f.JPG",
+          "alt": "Levi, Wren, & Jess"
         }
       ]
     }
