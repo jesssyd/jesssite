@@ -122,5 +122,55 @@
           "alt": "Levi, Wren, & Jess"
         }
       ]
+    },
+    {
+      "name" : "040324",
+      "images" : [
+        {
+          "src": "assets/modal/040324/040324-a.jpeg",
+          "alt": "Wren and Sydney"
+        },
+        {
+          "src": "assets/modal/040324/040324-b.jpeg",
+          "alt": "Levi 1"
+        },
+        {
+          "src": "assets/modal/040324/040324-c.jpeg",
+          "alt": "Jess"
+        },
+        {
+          "src": "assets/modal/040324/040324-e.jpeg",
+          "alt": "Marigolds"
+        }
+      ]
+    },
+    {
+      "name" : "032924",
+      "images" : [
+        {
+          "src": "assets/modal/032924/032924-g.jpeg",
+          "alt": "Linnea and Flask"
+        },
+        {
+          "src": "assets/modal/032924/032924-a.jpeg",
+          "alt": "Flask in a Boot"
+        },
+        {
+          "src": "assets/modal/032924/032924-b.jpeg",
+          "alt": "Ryann and Jess"
+        },
+        {
+          "src": "assets/modal/032924/032924-c.jpeg",
+          "alt": "Ryann and Linnea"
+        },
+        {
+          "src": "assets/modal/032924/032924-d.jpeg",
+          "alt": "Jess and her beautiful curls"
+        },
+        {
+          "src": "assets/modal/032924/032924-f.jpeg",
+          "alt": "Ryann"
+        }
+      ]
     }
   ]

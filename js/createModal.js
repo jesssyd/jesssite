@@ -56,20 +56,22 @@ export default function createModal(){
         display: grid;
         place-items: center;
         overflow: hidden;
-        box-shadow: 0px 2px 40px hsl(var(--dark));
         height: auto;
       }
       
       .modal__image-container {
         display: flex;
-        max-height: 100vh;
+        max-height: 80vh;
+        align-items: center;
+        width: 100%;
       }
       
       .modal__image {
-        width: 100%;
+       width: 100%;
+   
         height: 100%;
-        max-height: 80vh;
-        
+        // aspect-ratio: 16/10;
+        object-fit: cover;
       }
       
       .modal__overlay {
@@ -88,7 +90,7 @@ export default function createModal(){
       .modal__btn {
         display: grid;
         place-items: center;
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.8);
         color: var(--burgundy);
         padding: .5rem;
         border: 4px solid transparent;
@@ -98,7 +100,7 @@ export default function createModal(){
       
      
       .modal__btn svg {
-
+        pointer-events: none;
         width: 2rem;
         height: 2rem;
         transition: transform 250ms ease;

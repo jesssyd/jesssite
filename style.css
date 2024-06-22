@@ -152,14 +152,14 @@ html, body {
     transform: translate(-3%, 25%);
 }
 
-#main-hero p .btn {
+#main-hero .btn {
     background-color: rgba(235, 227, 213, 0.8);
     border-radius: 0px !important;
     transform: translate(-5%);
-    
+    color: var(--burgundy);
 }
 
-#main-hero p:hover {
+#main-hero button:hover {
     color: var(--burgundy);
     scale: 1.1;
 }
@@ -189,6 +189,9 @@ html, body {
 .small-title {
     font-family: var(--cursive-text);
     font-size: min(100px, 14vw);
+    color: var(--burgundy);
+}
+.navbar-nav .nav-link.active, .navbar-nav {
     color: var(--burgundy);
 }
 
@@ -335,15 +338,22 @@ html, body {
     box-sizing: border-box;
 } 
   
+#modal-gallery {
+    margin-bottom: 100px;
+}
+
 #modal-gallery .container {
     display: block;
-    max-width: 1200px; 
-    transform: translateY(5%);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(100px);
     padding-bottom: 2.5rem;
+    height: 100%;
 }
 
 #modal-gallery .small-title {
-    transform: translateY(25%);
+
     text-align: center;
 }
 
@@ -351,11 +361,12 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;  
-    gap: 1rem;
+    width: 100%;
+    gap: 2rem;
     overflow: hidden;
 }
 
-#modal-gallery .image-item {
+#modal-gallery .image-item{
     flex: 1 0 28%;
     min-width: 200px;
     cursor: zoom-in;
@@ -366,16 +377,29 @@ html, body {
     cursor: default;
 }
 
-#modal-gallery .image-item img {
+#modal-gallery .image-item img, video {
     width: 100%;
     object-fit: cover;
     transition: transform 250ms ease;
 }
 
-#modal-gallery .image-item:is(:hover, :focus) img {
+#modal-gallery .image-item:is(:hover, :focus) img, video {
     transform: scale(1.03);
 }
 
-#photography-footer .container {
-    transform: translateY(30%);
+#modal-gallery .image-item:is(:hover, :focus) video {
+    transform: scale(1.03);
+}
+#photography-footer {
+    margin-top: 50px;
+    transform: translateY(50%);
+}
+#photography-footer #foot {
+    
+    transform: translateY(30px);
+    @media (max-width: 432px) {
+        transform: translateY(none);
+        transform: translateY(200px);
+        
+    }
 }
