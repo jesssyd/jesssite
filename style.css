@@ -43,6 +43,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: var(--tan-bg);
+    background-color: white;
 }
 
 /* NAVBAR */
@@ -64,6 +65,7 @@ html, body {
 .navbar a, .navbar-brand, .footer-nav a {
     color: var(--burgundy);
     font-family: var(--body-text);
+    transition: 250ms ease-in-out;
 }
 
 .nav-link:hover {
@@ -72,7 +74,7 @@ html, body {
 }
 
 .navbar-brand:hover {
-    cursor: default;
+    
     color: var(--burgundy);
 }
 
@@ -139,10 +141,6 @@ html, body {
     transform: translate(-50%, -50%);
     font-family: var(--body-text);
 
-
-    :hover {
-       cursor: default; 
-    }
 }
 
 .hero-text h1 {
@@ -157,9 +155,10 @@ html, body {
     border-radius: 0px !important;
     transform: translate(-5%);
     color: var(--burgundy);
+    transition: 250ms ease-in-out;
 }
 
-#main-hero button:hover {
+#main-hero .btn:hover {
     color: var(--burgundy);
     scale: 1.1;
 }
@@ -175,6 +174,11 @@ html, body {
     color: var(--black-text);
     font-family: var(--body-text);
     font-size: 1.2rem;
+}
+
+#about-page .body-text {
+    /* background-color: rgb(255 255 255 / 30%); */
+    backdrop-filter: blur(10px);
 }
 
 .bold {
@@ -211,6 +215,12 @@ html, body {
     padding-left: 1vw;
     padding-right: 1vw;
     background-color: white;
+    background-color: var(--tan-bg);
+    transition: 250ms ease-in-out;
+} 
+
+#main-section .col:hover {
+    scale: 1.03;
 } 
 
 #main-section p {
@@ -399,7 +409,7 @@ html, body {
     transform: translateY(30px);
     @media (max-width: 432px) {
         transform: translateY(none);
-        transform: translateY(200px);
+        transform: translateY(20px);
         
     }
 }
