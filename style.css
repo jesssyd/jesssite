@@ -150,7 +150,7 @@ html, body {
     transform: translate(-3%, 25%);
 }
 
-#main-hero .btn {
+#main-hero .btn,  #about-page .btn, #projects-page .btn {
     background-color: rgba(235, 227, 213, 0.8);
     border-radius: 0px !important;
     transform: translate(-5%);
@@ -158,7 +158,7 @@ html, body {
     transition: 250ms ease-in-out;
 }
 
-#main-hero .btn:hover {
+#main-hero .btn:hover, #about-page .btn:hover, #projects-page .btn:hover  {
     color: var(--burgundy);
     scale: 1.1;
 }
@@ -379,7 +379,8 @@ html, body {
 #modal-gallery .image-item{
     flex: 1 0 28%;
     min-width: 200px;
-    cursor: zoom-in;
+    cursor: default;
+    /* cursor: zoom-in; */
     background-color: transparent; 
 }
 
@@ -393,13 +394,14 @@ html, body {
     transition: transform 250ms ease;
 }
 
-#modal-gallery .image-item:is(:hover, :focus) img, video {
+/* #modal-gallery .image-item:is(:hover, :focus) img, video {
     transform: scale(1.03);
 }
 
 #modal-gallery .image-item:is(:hover, :focus) video {
     transform: scale(1.03);
-}
+} */
+
 #photography-footer {
     margin-top: 50px;
     transform: translateY(50%);
@@ -412,4 +414,24 @@ html, body {
         transform: translateY(20px);
         
     }
+}
+
+/* PROJECTS PAGE */
+#projects-page {
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+.project-bg {
+    background-image: url("./assets/gallery/me.jpeg");
+    height: 100%;
+    background-position: 55% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: relative;
+
+}
+#projects-page .text-shifted {
+    transform: translateY(30%);
+
 }
