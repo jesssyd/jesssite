@@ -219,9 +219,9 @@ html, body {
     transition: 250ms ease-in-out;
 } 
 
-#main-section .col:hover {
+/* #main-section .col:hover {
     scale: 1.03;
-} 
+}  */
 
 #main-section p {
     padding-top: 1vw;
@@ -325,8 +325,6 @@ html, body {
 }
 
 /* ABOUT FOOTER */
-
-
 .page-footer {
     position: absolute;
     bottom: 0;
