@@ -105,12 +105,12 @@ html, body {
 }
 
 .navbar-toggler-icon {
-    background-image: url("./assets/list.svg");
+    background-image: url("./assets/icons/list.svg");
     
 }
 
 .custom-toggler[aria-expanded="true"] .navbar-toggler-icon{
-    background-image: url("./assets/x-lg.svg");
+    background-image: url("./assets/icons/x-lg.svg");
 }
 
 /* MAIN HERO */
@@ -150,18 +150,7 @@ html, body {
     transform: translate(-3%, 25%);
 }
 
-#main-hero .btn,  #about-page .btn, #projects-page .btn {
-    background-color: rgba(235, 227, 213, 0.8);
-    border-radius: 0px !important;
-    transform: translate(-5%);
-    color: var(--burgundy);
-    transition: 250ms ease-in-out;
-}
 
-#main-hero .btn:hover, #about-page .btn:hover, #projects-page .btn:hover  {
-    color: var(--burgundy);
-    scale: 1.1;
-}
 
 /* BODY TEXT */
 
@@ -176,10 +165,7 @@ html, body {
     font-size: 1.2rem;
 }
 
-#about-page .body-text {
-    /* background-color: rgb(255 255 255 / 30%); */
-    backdrop-filter: blur(10px);
-}
+
 
 .bold {
     font-family: var(--body-bold);
@@ -283,6 +269,7 @@ html, body {
     position: relative;
     height: 100vh;
     color: white;
+
 }
 
 .about-image {
@@ -310,13 +297,14 @@ html, body {
 }
 .about-body {
     align-self: flex-end;
-    max-width: 75vw;
-    min-width: 350px;
+    max-width: 80vw;
+    min-width: 370px;
 }
 
 #about-page .body-text {
     color: white;
-
+    backdrop-filter: blur(10px);
+    transform: translateY(-5%);
 }
 
 #about-page .small-title {
@@ -404,8 +392,8 @@ html, body {
     margin-top: 50px;
     transform: translateY(50%);
 }
+
 #photography-footer #foot {
-    
     transform: translateY(30px);
     @media (max-width: 432px) {
         transform: translateY(none);
@@ -420,6 +408,7 @@ html, body {
     height: 100vh;
     color: white;
 }
+
 .project-bg {
     background-image: url("./assets/gallery/me.jpeg");
     height: 100%;
@@ -431,5 +420,45 @@ html, body {
 }
 #projects-page .text-shifted {
     transform: translateY(30%);
+
+}
+
+#projects .navbar a, #projects .navbar-brand, #projects .footer-nav a {
+    color: var(--tan-bg);
+}
+
+#projects .nav-link:hover {
+    color: var(--tan-bg);  
+}
+
+#projects .navbar-brand:hover {
+    color: var(--tan-bg);
+}
+
+#projects .navbar-nav .nav-link.active {
+    color: var(--tan-bg);
+}
+
+#projects .navbar-toggler-icon {
+    background-image: url("./assets/icons/list-tan.svg");
+    
+}
+
+#projects .custom-toggler[aria-expanded="true"] .navbar-toggler-icon{
+    background-image: url("./assets/icons/x-lg-tan.svg");
+}
+* .btn {
+    background-color: rgba(235, 227, 213);
+    border-radius: 0px !important;
+    transform: translate(-5%);
+    color: var(--burgundy);
+    transition: 250ms ease-in-out;
+    font-family: var(--body-text);
+}
+
+* .btn:hover {
+    color: var(--burgundy);
+    scale: 1.1;
+    background-color: var(--tan-bg);
 
 }

@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (navbarSectionId === 'photography-nav') {
         backgroundColor = 'rgba(255, 255, 255, 0.8)';
         changePosition = 25;
+    } else if (navbarSectionId === 'project-nav') {
+        backgroundColor = 'rgba(84,11,14, 0.8)';
+        changePosition = 25;
     }
 
     function updateNavbarBackground() {
